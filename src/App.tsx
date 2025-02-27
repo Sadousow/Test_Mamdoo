@@ -8,6 +8,6 @@ import UserIcon from "@mui/icons-material/Group";
 // const newLocal = "name";
 export const App = () => (
   <Admin dataProvider={dataProvider}>
-    <Resource name="/" list={UserList} icon={UserIcon} />
+    <Resource name="/guest/s/default" list={UserList} icon={UserIcon} />
   </Admin>
 );
