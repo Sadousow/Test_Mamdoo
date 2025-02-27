@@ -14,9 +14,9 @@ export const App = () => (
       edit={PostEdit}
       create={PostCreate}
       icon={PostIcon}
-    />
+    /> */}
     {/* <Resource name="users" list={UserList} recordRepresentation={newLocal} /> */}
-    <Resource
+    {/* <Resource
       name="users"
       list={UserList}
       show={ShowGuesser}
