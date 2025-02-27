@@ -8,7 +8,7 @@ import UserIcon from "@mui/icons-material/Group";
 // const newLocal = "name";
 export const App = () => (
   <Admin dataProvider={dataProvider}>
-    <Resource
+    {/* <Resource
       name="posts"
       list={PostList}
       edit={PostEdit}
@@ -22,6 +22,6 @@ export const App = () => (
       show={ShowGuesser}
       recordRepresentation="name"
       icon={UserIcon}
-    />
+    /> */}
   </Admin>
 );
