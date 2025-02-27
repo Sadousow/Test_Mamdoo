@@ -1,13 +1,14 @@
-import { Admin, Resource, ShowGuesser } from "react-admin";
-import { dataProvider } from "./dataProvider";
-import { UserList } from "./composants/user";
-import { PostList, PostEdit, PostCreate } from "./composants/posts";
-import PostIcon from "@mui/icons-material/Book";
-import UserIcon from "@mui/icons-material/Group";
+import React from 'react'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 
-// const newLocal = "name";
-export const App = () => (
-  <Admin dataProvider={dataProvider}>
-    <Resource name="/guest/s/default" list={UserList} icon={UserIcon} />
-  </Admin>
-);
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/guest/s/default" />} />
+        <Route path="/guest/s/default" element={<div>App</div>} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
